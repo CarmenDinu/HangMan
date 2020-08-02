@@ -3,5 +3,6 @@ Make a hangman game
 - display with ****** the letters that are not yet guessed from the word
 - a new word is given to be guessed when you enter in an input box and press a submit button
 - if the letter is correct, then replace the star with the correct word
-- if the letter is NOT correct then start drawing a hangman with divs which grow in width/height based on classes that you add via js
+- if the letter is NOT correct then start drawing a hangman with divs which grow in
+ width/height based on classes that you add via js
 - the game will end after 4 incorrect tries and the input box w

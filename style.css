@@ -1,0 +1,91 @@
+.container {
+  height: 500px;
+  width: 400px;
+  background-color: lightgray;
+}
+.firstDiv {
+  position: absolute;
+  background-color: black;
+  width: 300px;
+  height: 10px;
+  top: 490px;
+  left: 50px;
+}
+.secondDiv {
+  position: absolute;
+  background-color: black;
+  width: 10px;
+  height: 460px;
+  top: 30px;
+  left: 100px;
+}
+.thirdDiv {
+  position: absolute;
+  background-color: black;
+  width: 200px;
+  height: 10px;
+  top: 30px;
+  left: 100px;
+}
+.forthdDiv {
+  position: absolute;
+  background-color: black;
+  width: 10px;
+  height: 70px;
+  top: 30px;
+  left: 200px;
+}
+
+.fifthdDiv {
+  position: absolute;
+  top: 90px;
+  left: 175px;
+  height: 50px;
+  width: 50px;
+  background-color: lightgray;
+  border: solid black 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.sixthDiv {
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  height: 150px;
+  width: 10px;
+  background-color: black;
+}
+.seventhDiv {
+  width: 50px;
+  height: 200px;
+  border-bottom: 10px solid black;
+  transform: translateY(-20px) translateX(5px) rotate(27deg);
+  position: absolute;
+  left: 200px;
+}
+.eigthDiv {
+  width: 50px;
+  height: 200px;
+  border-bottom: 10px solid black;
+  transform: translateY(-20px) translateX(5px) rotate(-27deg);
+  position: absolute;
+  left: 150px;
+}
+.ninethDiv {
+  width: 50px;
+  height: 190px;
+  border-bottom: 10px solid black;
+  transform: translateY(-20px) translateX(5px) rotate(127deg);
+  position: absolute;
+  left: 235px;
+  top: 295px;
+}
+.tenthDiv {
+  width: 50px;
+  height: 190px;
+  border-bottom: 10px solid black;
+  transform: translateY(-20px) translateX(5px) rotate(-127deg);
+  position: absolute;
+  left: 115px;
+  top: 295px;
+}
