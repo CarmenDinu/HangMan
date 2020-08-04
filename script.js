@@ -1,36 +1,44 @@
-var wordsToGuess = ["pink", "blue", "red", "yey", "ney"];
-var word = wordsToGuess[Math.floor(Math.random() * wordsToGuess.length)];
-var guessedArray = [];
-for (let i = 0; i < word.length; i++) {
-  guessedArray[i] = "*";
+let wordToGuess = prompt("Please give a word to guess");
+console.log(wordToGuess);
+
+let totalLives = 4;
+let livesLeft = document.getElementById("livesLeft");
+livesLeft.innerHTML = 'You have ' + totalLives + ' lives remaining';
+
+let unguessedPattern = "*";
+let currentGuess = unguessedPattern.repeat(wordToGuess.length);
+document.getElementById("stars").innerHTML = `Current Word to Guess is: 
+<br>
+<br>
+${currentGuess}`;
+
+let guessedArray = [];
+
+for (i = 0; i < wordToGuess.length; i++) {
+    guessedArray.push(unguessedPattern);
 }
-var livesLeft = 5;
-var remainingLetters = word.length;
 
-function takeaLetter() {
-  let input = document.getElementById("letter").value;
+function takeInput() {
+    let guessInputLetter = document.getElementById("currentLetter").value;
+  
+    if (guessInputLetter === null || guessInputLetter === "null" || guessInputLetter === "") {
+        return
 
-  if (input === null) {
-    return;
-  } else if (input.length !== 1) {
-    return;
-  } else {
-    for (let k = 0; k < word.length; k++) {
-      if (word[k] === input) {
-        guessedArray[k] = input;
-      }
+    } else {
+        for (let i = 0; i < wordToGuess.length; i++) {
+
+          if (wordToGuess[i] === guessInputLetter) {
+              guessedArray[i] = guessInputLetter;  
+           } 
+        }
     }
-  }
-  let isLetterCorrect = guessedArray.includes(input);
-  if (!isLetterCorrect) {
-    let firstDiv = document.getElementById("firstDiv");
-    firstDiv.classList.add("firstDiv");
-  }
+    let didIGuessInTheCurrentIteration = guessedArray.includes(guessInputLetter);
 
-  printArray(guessedArray);
-}
+    if (!didIGuessInTheCurrentIteration) {
+       totalLives--;
 
-function printArray(input) {
-  let guessedLetters = document.getElementById("currentGuess");
-  guessedLetters.innerText = input.join(" ");
+       livesLeft.innerHTML = `You have ` + totalLives + ` lives remaining`;
+    }
+    document.getElementById("stars").innerText = guessedArray.join(' ');
+     
 }

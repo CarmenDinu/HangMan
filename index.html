@@ -3,15 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>HANGMAN</title>
     <link rel="stylesheet" href="style.css" />
  
   </head>
   <body>
-    <input type="text" id="letter" aria-label="text"> </input>
-    <button id="btn" onclick="takeaLetter()">Press it </button>
-    <div id="currentGuess"></div>
-    <div id="lives"></div>
+
+    <h1>'Hangman' Game</h1>
+
+    <p>[no people will actually be harmed during this game]</p>
+    
+        <input type="text" maxlength="1" minlength="1" name="currentLetter" id="currentLetter" placeholder="Guess a letter" />
+        <button id="guess" name="guess" onclick="takeInput()" value="Guess">Guess</button>
+        
+        <br>
+    <p id="stars"></p>
+    <p id="livesLeft"></p>
+
     <div class="container">
       <div id="firstDiv"></div>
       <div id="secondDiv"></div>
