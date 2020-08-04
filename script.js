@@ -1,28 +1,36 @@
-console.log("hangman !");
-let wordToGuess = prompt("Please give word to guess");
-wordToGuess.length;
-let unguessedPattern = "*";
-let currentGuess = unguessedPattern.repeat(wordToGuess.length);
-console.log(currentGuess);
-let liveLeft = 5;
-let gameWon = false;
-while (liveLeft > 0 && !gameWon) {
-  let didIGuessInTheCurrentIteration = false;
-  let currentLetter = prompt("please give a letter");
-  for (let i = 0; i < wordToGuess.length; i++) {
-    if (wordToGuess[i] === currentLetter) {
-      currentGuess =
-        currentGuess.substring(0, i) +
-        currentLetter +
-        currentGuess.substring(i + 1);
-      didIGuessInTheCurrentIteration = true;
-      console.log(
-        `Pentru iteratia ${i} si litera introdusa |${currentLetter}| avem in cuvantul |${wordToGuess}| ghicite urmatorul patern |${currentGuess}|`
-      );
+var wordsToGuess = ["pink", "blue", "red", "yey", "ney"];
+var word = wordsToGuess[Math.floor(Math.random() * wordsToGuess.length)];
+var guessedArray = [];
+for (let i = 0; i < word.length; i++) {
+  guessedArray[i] = "*";
+}
+var livesLeft = 5;
+var remainingLetters = word.length;
+
+function takeaLetter() {
+  let input = document.getElementById("letter").value;
+
+  if (input === null) {
+    return;
+  } else if (input.length !== 1) {
+    return;
+  } else {
+    for (let k = 0; k < word.length; k++) {
+      if (word[k] === input) {
+        guessedArray[k] = input;
+      }
     }
   }
-  if (!didIGuessInTheCurrentIteration) {
-    liveLeft--;
+  let isLetterCorrect = guessedArray.includes(input);
+  if (!isLetterCorrect) {
+    let firstDiv = document.getElementById("firstDiv");
+    firstDiv.classList.add("firstDiv");
   }
-  console.log(`vieti ramase ${liveLeft}`);
+
+  printArray(guessedArray);
+}
+
+function printArray(input) {
+  let guessedLetters = document.getElementById("currentGuess");
+  guessedLetters.innerText = input.join(" ");
 }
