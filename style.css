@@ -1,3 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.h1Hidden, .pHidden {
+  display: none;
+}
+
 .container {
   position: absolute;
   top: 100px;
@@ -5,7 +17,8 @@
   width: 400px;
   background-color: lightgray;
 }
-.firstDiv {
+
+.id1Visible {
   position: absolute;
   background-color: black;
   width: 300px;
@@ -13,7 +26,13 @@
   top: 490px;
   left: 50px;
 }
-.secondDiv {
+
+.id1Hidden {
+  width: 0;
+  height: 0;
+}
+
+.id2Visible {
   position: absolute;
   background-color: black;
   width: 10px;
@@ -21,7 +40,13 @@
   top: 30px;
   left: 100px;
 }
-.thirdDiv {
+
+.id2Hidden {
+  width: 0;
+  height: 0;
+}
+
+.id3Visible {
   position: absolute;
   background-color: black;
   width: 200px;
@@ -29,7 +54,13 @@
   top: 30px;
   left: 100px;
 }
-.forthdDiv {
+
+.id3Hidden {
+  width: 0;
+  height: 0;
+}
+
+.id4Visible {
   position: absolute;
   background-color: black;
   width: 10px;
@@ -38,7 +69,12 @@
   left: 200px;
 }
 
-.fifthdDiv {
+.id4Hidden {
+  width: 0;
+  height: 0;
+}
+
+.id5Visible {
   position: absolute;
   top: 90px;
   left: 175px;
@@ -49,45 +85,82 @@
   border-radius: 50%;
   display: inline-block;
 }
-.sixthDiv {
+
+.id5Hidden {
+  width: 0;
+  height: 0;
+}
+
+.id6Visible {
   position: absolute;
-  top: 150px;
-  left: 200px;
+  top: 140px;
+  left: 195px;
   height: 150px;
   width: 10px;
   background-color: black;
 }
-.seventhDiv {
+
+.id6Hidden {
+  width: 0;
+  height: 0;
+}
+
+.id7Visible {
   width: 50px;
   height: 200px;
   border-bottom: 10px solid black;
-  transform: translateY(-20px) translateX(5px) rotate(27deg);
+  transform: translateY(-20px) translateX(5px) rotate(127deg);
   position: absolute;
-  left: 200px;
+  left: 230px;
+  top: 165px;
 }
-.eigthDiv {
+
+.id7Hidden {
+  width: 0;
+  height: 0;
+}
+
+.id8Visible {
   width: 50px;
   height: 200px;
   border-bottom: 10px solid black;
-  transform: translateY(-20px) translateX(5px) rotate(-27deg);
+  transform: translateY(-20px) translateX(5px) rotate(-127deg);
   position: absolute;
-  left: 150px;
+  left: 112px;
+  top: 165px;
 }
-.ninethDiv {
+
+.id8Hidden {
+  width: 0;
+  height: 0;
+}
+
+.id9Visible {
   width: 50px;
   height: 190px;
   border-bottom: 10px solid black;
   transform: translateY(-20px) translateX(5px) rotate(127deg);
   position: absolute;
-  left: 235px;
-  top: 295px;
+  left: 230px;
+  top: 290px;
 }
-.tenthDiv {
+
+.id9Hidden {
+  width: 0;
+  height: 0;
+}
+
+.id10Visible {
   width: 50px;
   height: 190px;
   border-bottom: 10px solid black;
   transform: translateY(-20px) translateX(5px) rotate(-127deg);
   position: absolute;
-  left: 115px;
-  top: 295px;
+  left: 110px;
+  top: 290px;
 }
+
+.id10Hidden {
+  width: 0;
+  height: 0;
+} 
