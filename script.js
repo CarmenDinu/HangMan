@@ -1,4 +1,4 @@
-var wordsToGuess = ["pink", "blue", "red", "yey", "ney"];
+var wordsToGuess = ["pink"];
 var word = wordsToGuess[Math.floor(Math.random() * wordsToGuess.length)];
 var guessedArray = [];
 for (let i = 0; i < word.length; i++) {
@@ -23,8 +23,39 @@ function takeaLetter() {
   }
   let isLetterCorrect = guessedArray.includes(input);
   if (!isLetterCorrect) {
+    livesLeft--;
+    document.getElementById(
+      "lives"
+    ).innerHTML = `You have ${livesLeft} left lives`;
+  }
+  if (livesLeft === 4) {
     let firstDiv = document.getElementById("firstDiv");
     firstDiv.classList.add("firstDiv");
+  } else if (livesLeft === 3) {
+    let secondDiv = document.getElementById("secondDiv");
+    secondDiv.classList.add("secondDiv");
+  } else if (!isLetterCorrect && livesLeft === 2) {
+    let thirdDiv = document.getElementById("thirdDiv");
+    thirdDiv.classList.add("thirdDiv");
+  } else if (livesLeft === 1) {
+    let forthdDiv = document.getElementById("forthdDiv");
+    forthdDiv.classList.add("forthdDiv");
+    let fifthdDiv = document.getElementById("fifthdDiv");
+    fifthdDiv.classList.add("fifthdDiv");
+    let sixthDiv = document.getElementById("sixthDiv");
+    sixthDiv.classList.add("sixthDiv");
+    let seventhDiv = document.getElementById("seventhDiv");
+    seventhDiv.classList.add("seventhDiv");
+    let eigthDiv = document.getElementById("eigthDiv");
+    eigthDiv.classList.add("eigthDiv");
+    let ninethDiv = document.getElementById("ninethDiv");
+    ninethDiv.classList.add("ninethDiv");
+    let tenthDiv = document.getElementById("tenthDiv");
+    tenthDiv.classList.add("tenthDiv");
+  } else if (livesLeft <= 0) {
+    livesLeft--;
+    document.getElementById("lives").innerHTML = `Looser`;
+    return;
   }
 
   printArray(guessedArray);
@@ -33,4 +64,9 @@ function takeaLetter() {
 function printArray(input) {
   let guessedLetters = document.getElementById("currentGuess");
   guessedLetters.innerText = input.join(" ");
+}
+
+function hello(name) {
+
+  return 'Hello ' + name.charAt(0).toUpperCase()+name.slice(1);
 }
