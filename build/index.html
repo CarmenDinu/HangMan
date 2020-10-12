@@ -9,12 +9,15 @@
   </head>
   <body>
     <div class="container justify-content-center">
+      
     <h3>HangMan Game</h3>
 
-    <input type="text" id="letter" aria-label="text"> </input>
-    <button id="btn" onclick="takeaLetter()">Guess it </button>
+    <input class="form-control" type="text" id="letter" aria-label="text" placeholder="Type a single letter here"> </input><br>
+    <button class="btn-success"id="btn" onclick="takeaLetter()">Guess it </button>
+    <button class="btn-primary" onClick="window.location.reload();">Try another one</button><br><br>
     <div id="currentGuess">Word to guess will appear here</div>
-    <div id="lives">You have 5 lives</div>
+    <div id="lives">You have 4 lives</div> <br>  
+    <div class="container2">
     <div class="container2">
       <div id="firstDiv"></div>
       <div id="secondDiv"></div>
