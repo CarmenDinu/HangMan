@@ -10,15 +10,23 @@
   <body>
     <div class="container justify-content-center">
       
-    <h3>HangMan Game</h3>
 
+    <div class="row">
+    <div  class="col-6 p-4 m-4">
+      <h2>HangMan Game</h2>
+      <h6>[no people will actually be harmed during this game]</h6>
+      <h4>Guess one the primary colors <span class="red-dot"> <span class="blue-dot"> <span class="yellow-dot"></span></h4>
     <input class="form-control" type="text" id="letter" aria-label="text" placeholder="Type a single letter here and press on Guess it"> </input><br>
-    <button class="btn-success"id="btn" onclick="takeaLetter()">Guess it </button>
-    <button class="btn-primary" onClick="window.location.reload();">Try another one</button><br><br>
-    <div id="currentGuess">Word to guess will appear here</div>
-    <div id="lives">You have 4 lives</div> <br>  
-    <div class="container2">
-    <div class="container2">
+    <button class="btn-success"id="btn" onclick="takeaLetter()" >Guess it </button>
+    <button class="btn-primary" onClick="window.location.reload();" >Try another one</button><br><br>
+    <h5 id="lives">You have 4 lives</h5> 
+    <div id="currentGuess"></div>
+   
+    
+  </div>
+  <div>
+   
+    <div class=" col-6 container2 p-4 m-4" >
       <div id="firstDiv"></div>
       <div id="secondDiv"></div>
       <div id="thirdDiv"></div>
@@ -29,9 +37,10 @@
       <div id="eigthDiv"></div>
       <div id="ninethDiv"></div>
       <div id="tenthDiv"></div>
-    </div>   
+    </div>
   </div>
-  <img src="https://simple.wikipedia.org/wiki/Primary_color#/media/File:RYB.png"></img>
+</div>
+ 
      <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
