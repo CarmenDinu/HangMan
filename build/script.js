@@ -53,7 +53,7 @@ function takeaLetter() {
 		document.getElementById('lives').innerHTML = `Try another one`;
 	} else if (livesLeft <= 0) {
 		livesLeft--;
-		document.getElementById('lives').innerHTML = `Really now! Press the Try another one button`;
+		document.getElementById('lives').innerHTML = `Come on! Press the Try another one button`;
 		return;
 	}
 
@@ -68,8 +68,10 @@ function printArray(input) {
 function hello(name) {
 	return 'Hello ' + name.charAt(0).toUpperCase() + name.slice(1);
 }
-const reloadtButton = document.querySelector('#reload');
+let reloadButton = document.querySelector('#reload');
 function reload() {
 	reload = location.reload();
 }
-reloadButton.addEventListener('click', reload, false);
+
+if(reloadButton){
+reloadButton.addEventListener('click', reload, false)};

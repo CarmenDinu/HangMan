@@ -1,12 +1,16 @@
 body {
-	background-image: url('https://media.istockphoto.com/photos/yellow-rugged-wooden-background-with-straight-horizontal-lines-and-picture-id869797314?k=6&m=869797314&s=612x612&w=0&h=b23YW9wQgER6cMNKaAzNQ7PLF2xYeSoNbxuLZUiqOAU=') !important;
+	background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/87e547b0-d7b3-4e6d-8403-582d7be99163/d2fnx0k-f47d17ce-d415-4415-bdac-54cc5425134a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi84N2U1NDdiMC1kN2IzLTRlNmQtODQwMy01ODJkN2JlOTkxNjMvZDJmbngway1mNDdkMTdjZS1kNDE1LTQ0MTUtYmRhYy01NGNjNTQyNTEzNGEuanBnIn1dXX0.P5h4vSlpOyff3BVjgvi82qWj2LcoGvbwStJmNGBfuos') !important;
+	height: 100%;
 }
 h2,
 h5,
 h4,
 h6 {
 	font-weight: bolder !important;
+	color:gainsboro;
 }
+
+
 .container2 {
 	position: absolute;
 	height: 500px;
@@ -14,7 +18,7 @@ h6 {
 }
 .firstDiv {
 	position: absolute;
-	background-color: rgb(95, 23, 23);
+	background-color: rgb(250, 75, 6);
 	width: 300px;
 	height: 20px;
 	top: 490px;
@@ -24,7 +28,7 @@ h6 {
 }
 .secondDiv {
 	position: absolute;
-	background-color: rgb(95, 23, 23);
+	background-color: rgb(250, 75, 6);
 	width: 15px;
 	height: 480px;
 	top: 30px;
@@ -34,7 +38,7 @@ h6 {
 }
 .thirdDiv {
 	position: absolute;
-	background-color: rgb(95, 23, 23);
+	background-color: rgb(250, 75, 6);
 	width: 200px;
 	height: 15px;
 	top: 30px;
@@ -44,10 +48,10 @@ h6 {
 }
 .forthdDiv {
 	position: absolute;
-	background-color: rgb(6, 6, 105);
+	background-color:  rgb(250, 75, 6);
 	width: 10px;
 	height: 52px;
-	top: 43px;
+	top: 44px;
 	left: 200px;
 	transition: 1s ease-in-out;
 }
@@ -58,7 +62,7 @@ h6 {
 	left: 179px;
 	height: 50px;
 	width: 50px;
-	border: solid rgb(6, 6, 105) 8px;
+	border: solid  rgb(250, 75, 6) 8px;
 	border-radius: 50%;
 	display: inline-block;
 	transition: 1s ease-in-out;
@@ -69,13 +73,13 @@ h6 {
 	left: 200px;
 	height: 160px;
 	width: 10px;
-	background-color: rgb(6, 6, 105);
+	background-color:  rgb(250, 75, 6);
 	transition: 1s ease-in-out;
 }
 .seventhDiv {
 	width: 50px;
 	height: 200px;
-	border-bottom: 10px solid rgb(6, 6, 105);
+	border-bottom: 10px solid  rgb(250, 75, 6);
 	transform: translateY(-20px) translateX(5px) rotate(27deg);
 	position: absolute;
 	left: 200px;
@@ -84,7 +88,7 @@ h6 {
 .eigthDiv {
 	width: 50px;
 	height: 200px;
-	border-bottom: 10px solid rgb(6, 6, 105);
+	border-bottom: 10px solid  rgb(250, 75, 6);
 	transform: translateY(-20px) translateX(5px) rotate(-27deg);
 	position: absolute;
 	left: 150px;
@@ -93,7 +97,7 @@ h6 {
 .ninethDiv {
 	width: 50px;
 	height: 190px;
-	border-bottom: 10px solid rgb(6, 6, 105);
+	border-bottom: 10px solid  rgb(250, 75, 6);
 	transform: translateY(-20px) translateX(5px) rotate(127deg);
 	position: absolute;
 	left: 235px;
@@ -103,7 +107,7 @@ h6 {
 .tenthDiv {
 	width: 50px;
 	height: 190px;
-	border-bottom: 10px solid rgb(6, 6, 105);
+	border-bottom: 10px solid  rgb(250, 75, 6);
 	transform: translateY(-20px) translateX(5px) rotate(-127deg);
 	position: absolute;
 	left: 117px;
@@ -112,6 +116,7 @@ h6 {
 }
 #currentGuess {
 	font-size: 45px;
+	color:gainsboro
 }
 
 .red-dot {
